@@ -30,6 +30,13 @@
 		BB4086551D61C863000AC346 /* LaunchImage-1-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4086461D61C863000AC346 /* LaunchImage-1-700@2x.png */; };
 		BB4086561D61C863000AC346 /* LaunchImage-1-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4086471D61C863000AC346 /* LaunchImage-1-800-667h@2x.png */; };
 		BB4086571D61C863000AC346 /* LaunchImage-1-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4086481D61C863000AC346 /* LaunchImage-1-800-Portrait-736h@3x.png */; };
+		BB40866A1D61DD90000AC346 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4086691D61DD90000AC346 /* MainTabBarController.swift */; };
+		BB40866C1D61DDB6000AC346 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB40866B1D61DDB6000AC346 /* NavViewController.swift */; };
+		BB40866E1D61DE0A000AC346 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB40866D1D61DE0A000AC346 /* BaseViewController.swift */; };
+		BB4086701D61DE4F000AC346 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB40866F1D61DE4F000AC346 /* FocusViewController.swift */; };
+		BB4086721D61DE5C000AC346 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4086711D61DE5C000AC346 /* GroupViewController.swift */; };
+		BB4086741D61DE67000AC346 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4086731D61DE67000AC346 /* MineViewController.swift */; };
+		BB4086761D61DEB0000AC346 /* Ctrl.json in Resources */ = {isa = PBXBuildFile; fileRef = BB4086751D61DEB0000AC346 /* Ctrl.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +86,13 @@
 		BB4086461D61C863000AC346 /* LaunchImage-1-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-1-700@2x.png"; sourceTree = "<group>"; };
 		BB4086471D61C863000AC346 /* LaunchImage-1-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-1-800-667h@2x.png"; sourceTree = "<group>"; };
 		BB4086481D61C863000AC346 /* LaunchImage-1-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-1-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		BB4086691D61DD90000AC346 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BB40866B1D61DDB6000AC346 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		BB40866D1D61DE0A000AC346 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BB40866F1D61DE4F000AC346 /* FocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
+		BB4086711D61DE5C000AC346 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		BB4086731D61DE67000AC346 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		BB4086751D61DEB0000AC346 /* Ctrl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ctrl.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +143,7 @@
 		BB4085EE1D61C76F000AC346 /* TodayFocus */ = {
 			isa = PBXGroup;
 			children = (
+				BB4086581D61DD56000AC346 /* classes */,
 				BB4086371D61C863000AC346 /* resouse */,
 				BB4085EF1D61C76F000AC346 /* AppDelegate.swift */,
 				BB4085F11D61C76F000AC346 /* ViewController.swift */,
@@ -195,6 +210,148 @@
 				BB4086481D61C863000AC346 /* LaunchImage-1-800-Portrait-736h@3x.png */,
 			);
 			path = Lunchimage;
+			sourceTree = "<group>";
+		};
+		BB4086581D61DD56000AC346 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				BB4086591D61DD56000AC346 /* common */,
+				BB40865A1D61DD56000AC346 /* focus */,
+				BB40865F1D61DD56000AC346 /* group */,
+				BB4086641D61DD56000AC346 /* mine */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		BB4086591D61DD56000AC346 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BB4086691D61DD90000AC346 /* MainTabBarController.swift */,
+				BB40866B1D61DDB6000AC346 /* NavViewController.swift */,
+				BB40866D1D61DE0A000AC346 /* BaseViewController.swift */,
+				BB4086751D61DEB0000AC346 /* Ctrl.json */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		BB40865A1D61DD56000AC346 /* focus */ = {
+			isa = PBXGroup;
+			children = (
+				BB40865B1D61DD56000AC346 /* homepage */,
+			);
+			path = focus;
+			sourceTree = "<group>";
+		};
+		BB40865B1D61DD56000AC346 /* homepage */ = {
+			isa = PBXGroup;
+			children = (
+				BB40865C1D61DD56000AC346 /* controller */,
+				BB40865D1D61DD56000AC346 /* model */,
+				BB40865E1D61DD56000AC346 /* view */,
+			);
+			path = homepage;
+			sourceTree = "<group>";
+		};
+		BB40865C1D61DD56000AC346 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB40866F1D61DE4F000AC346 /* FocusViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BB40865D1D61DD56000AC346 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BB40865E1D61DD56000AC346 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BB40865F1D61DD56000AC346 /* group */ = {
+			isa = PBXGroup;
+			children = (
+				BB4086601D61DD56000AC346 /* homepage */,
+			);
+			path = group;
+			sourceTree = "<group>";
+		};
+		BB4086601D61DD56000AC346 /* homepage */ = {
+			isa = PBXGroup;
+			children = (
+				BB4086611D61DD56000AC346 /* controller */,
+				BB4086621D61DD56000AC346 /* model */,
+				BB4086631D61DD56000AC346 /* view */,
+			);
+			path = homepage;
+			sourceTree = "<group>";
+		};
+		BB4086611D61DD56000AC346 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB4086711D61DE5C000AC346 /* GroupViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BB4086621D61DD56000AC346 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BB4086631D61DD56000AC346 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BB4086641D61DD56000AC346 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				BB4086651D61DD56000AC346 /* homepage */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		BB4086651D61DD56000AC346 /* homepage */ = {
+			isa = PBXGroup;
+			children = (
+				BB4086661D61DD56000AC346 /* controller */,
+				BB4086671D61DD56000AC346 /* model */,
+				BB4086681D61DD56000AC346 /* view */,
+			);
+			path = homepage;
+			sourceTree = "<group>";
+		};
+		BB4086661D61DD56000AC346 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB4086731D61DE67000AC346 /* MineViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BB4086671D61DD56000AC346 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BB4086681D61DD56000AC346 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +476,7 @@
 				BB4085FA1D61C76F000AC346 /* Assets.xcassets in Resources */,
 				BB4086561D61C863000AC346 /* LaunchImage-1-800-667h@2x.png in Resources */,
 				BB4085F51D61C76F000AC346 /* Main.storyboard in Resources */,
+				BB4086761D61DEB0000AC346 /* Ctrl.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +501,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4086721D61DE5C000AC346 /* GroupViewController.swift in Sources */,
 				BB4085F21D61C76F000AC346 /* ViewController.swift in Sources */,
+				BB4086741D61DE67000AC346 /* MineViewController.swift in Sources */,
+				BB40866C1D61DDB6000AC346 /* NavViewController.swift in Sources */,
 				BB4085F81D61C76F000AC346 /* TodayFocus.xcdatamodeld in Sources */,
+				BB4086701D61DE4F000AC346 /* FocusViewController.swift in Sources */,
+				BB40866A1D61DD90000AC346 /* MainTabBarController.swift in Sources */,
 				BB4085F01D61C76F000AC346 /* AppDelegate.swift in Sources */,
+				BB40866E1D61DE0A000AC346 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +653,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TodayFocus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianfeng.TodayFocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,7 +666,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TodayFocus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianfeng.TodayFocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,6 +740,7 @@
 				BB4086191D61C76F000AC346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB40861A1D61C76F000AC346 /* Build configuration list for PBXNativeTarget "TodayFocusTests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +749,7 @@
 				BB40861C1D61C76F000AC346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB40861D1D61C76F000AC346 /* Build configuration list for PBXNativeTarget "TodayFocusUITests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +758,7 @@
 				BB40861F1D61C76F000AC346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
